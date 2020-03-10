@@ -1,3 +1,5 @@
+" Conor Odell | github.com/conorao
+
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Set 80 character ruler
