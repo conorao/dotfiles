@@ -41,3 +41,6 @@ export PATH="/usr/local/opt/libxml2/bin:$PATH"
 
 # Silence zsh nag on Catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Set default editor
+export EDITOR="sublime"
