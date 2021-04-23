@@ -101,4 +101,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # .zshrc
 
-export PS1="\[$(tput bold)\]\[$(tput setaf 4)\][\[$(tput setaf 7)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 5)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 4)\]:\[$(tput setaf 3)\]\$(parse_git_branch)\[$(tput setaf 4)\]]\\$ \[$(tput sgr0)\]"
+# export PS1="\[$(tput bold)\]\[$(tput setaf 4)\][\[$(tput setaf 7)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 5)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 4)\]:\[$(tput setaf 3)\]\$(parse_git_branch)\[$(tput setaf 4)\]]\\$ \[$(tput sgr0)\]"
