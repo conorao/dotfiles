@@ -101,8 +101,22 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # .zshrc
 
-source .private
+# Add private secrets
+if [ -f ~/.private ]; then
+  source .private
+fi
 
+# Add sublime executable to PATH
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 alias sublime="subl"
 
+# Initiate rbenv
 eval "$(rbenv init -)"
+
+# Initiate pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
