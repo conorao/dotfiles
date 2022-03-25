@@ -1,0 +1,7 @@
+[core]
+	excludesfile = /Users/conorao/workspace/dotfiles/.gitignore
+[user]
+	name = Conor Odell
+	email = conorao@gmail.com
+[alias]
+  cb = rev-parse --abbrev-ref HEAD
