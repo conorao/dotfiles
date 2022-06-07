@@ -5,3 +5,5 @@
 	email = conorao@gmail.com
 [alias]
   cb = rev-parse --abbrev-ref HEAD
+[init]
+	defaultBranch = main

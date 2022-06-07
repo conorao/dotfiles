@@ -109,6 +109,7 @@ fi
 # Add sublime executable to PATH
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 alias sublime="subl"
+export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
 
 # Initiate rbenv
 eval "$(rbenv init -)"
@@ -120,3 +121,8 @@ eval "$(pyenv init --path)"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Created by `pipx` on 2022-04-12 21:44:25
+export PATH="$PATH:/Users/conorao/.local/bin"
+# EB CLI
+export PATH="/Users/conorao/.ebcli-virtual-env/executables:$PATH"
