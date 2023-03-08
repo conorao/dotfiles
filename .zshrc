@@ -122,6 +122,13 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# Let NVM know where it should be
+if [ ! -d ~/.nvm ]; then
+  mkdir -p ~/.nvm
+fi
+
+export NVM_DIR="$HOME/.nvm"
+
 # Created by `pipx` on 2022-04-12 21:44:25
 export PATH="$PATH:/Users/conorao/.local/bin"
 # EB CLI
