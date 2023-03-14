@@ -106,10 +106,8 @@ if [ -f ~/.private ]; then
   source .private
 fi
 
-# Add sublime executable to PATH
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-alias sublime="subl"
-export EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
+# Set vscode as default editor
+export EDITOR="code -w"
 
 # Initiate rbenv
 eval "$(rbenv init -)"
@@ -128,6 +126,9 @@ if [ ! -d ~/.nvm ]; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 
 # Created by `pipx` on 2022-04-12 21:44:25
 export PATH="$PATH:/Users/conorao/.local/bin"
